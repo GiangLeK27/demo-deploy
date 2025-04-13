@@ -28,3 +28,13 @@ input, textarea {
     padding: 10px;
     margin: 5px 0 10px 0;
 }
+.project-link {
+  text-decoration: none;    /* Bỏ gạch chân */
+  color: black;             /* Màu chữ bình thường */
+  transition: 0.3s;         /* Làm mượt khi hover */
+}
+
+.project-link:hover {
+  color: blue;              /* Khi trỏ vào thì chuyển sang màu xanh */
+  text-decoration: underline; /* Có gạch chân như link */
+}
