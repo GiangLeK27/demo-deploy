@@ -13,6 +13,16 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 const form = document.querySelector("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  alert("Thank you for your message! This is a demo site.");
+
+  Swal.fire({
+    icon: 'success',
+    title: 'Message Sent!',
+    text: 'Thanks for reaching out. I’ll get back to you as soon as possible.',
+    footer: '🌐 This is a demo portfolio by Lê Vũ Trường Giang',
+    confirmButtonColor: '#3085d6',
+    confirmButtonText: 'Got it!'
+  });
+
   form.reset();
 });
+
