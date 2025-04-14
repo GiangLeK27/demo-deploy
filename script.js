@@ -10,19 +10,16 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-const form = document.querySelector("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
   Swal.fire({
     icon: 'success',
     title: 'Message Sent!',
-    text: 'Thanks for reaching out. I’ll get back to you as soon as possible.',
-    footer: '🌐 This is a demo portfolio by Lê Vũ Trường Giang',
-    confirmButtonColor: '#3085d6',
-    confirmButtonText: 'Got it!'
+    text: 'I’ll get back to you soon!',
+    footer: '📬 Sent to: 523h0021@student.tdtu.edu.vn',
+    confirmButtonText: 'OK'
   });
-
-  form.reset();
+  setTimeout(() => {
+    form.submit();
+  }, 1000);
 });
-
