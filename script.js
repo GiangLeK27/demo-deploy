@@ -1,5 +1,5 @@
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
@@ -9,6 +9,8 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
+
+const form = document.querySelector("form");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
