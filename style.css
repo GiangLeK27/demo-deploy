@@ -136,3 +136,42 @@ footer {
   opacity: 1;
   transform: translateX(-50%) translateY(0px);
 }
+
+.social {
+  background-color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.social h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+  padding: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
