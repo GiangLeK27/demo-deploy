@@ -12,14 +12,15 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+
   Swal.fire({
     icon: 'success',
     title: 'Message Sent!',
     text: 'I’ll get back to you soon!',
-    footer: '📬 Sent to: 523h0021@student.tdtu.edu.vn',
     confirmButtonText: 'OK'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      form.submit();
+    }
   });
-  setTimeout(() => {
-    form.submit();
-  }, 1000);
 });
