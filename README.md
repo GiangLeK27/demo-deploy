@@ -1,4 +1,4 @@
-# demo-deploy
+# Demo Portfolio
 ---
 ## 🚀 Step-by-Step Deployment Instructions
 
