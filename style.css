@@ -175,3 +175,21 @@ footer {
 .social-icons a:hover {
   transform: scale(1.2);
 }
+
+.project-item {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.project-item h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.project-item p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #555;
+}
